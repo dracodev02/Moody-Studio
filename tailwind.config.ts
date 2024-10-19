@@ -25,9 +25,6 @@ const config: Config = {
       maxWidth: {
         desktop: "1192px",
       },
-      boxShadow: {
-        ourProject: "0px 0px 72px 0px #92070780",
-      },
     },
   },
   plugins: [],
