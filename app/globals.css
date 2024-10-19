@@ -3,21 +3,14 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background: #000000;
+  --foreground: #ffffff;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--outfit);
 }
 
 @layer utilities {
@@ -25,3 +18,13 @@ body {
     text-wrap: balance;
   }
 }
+  
+  svg {
+    display: block;
+  }
+  
+  text {
+    fill: transparent;
+    stroke: white;
+    stroke-width: 1;
+  }
