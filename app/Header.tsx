@@ -29,7 +29,7 @@ const Header = () => {
       <div className="max-w-desktop w-full mx-auto flex justify-between items-center px-2">
         <div className="py-[14px]">
           <img
-            onClick={() => scrollToSection(0, "about")}
+            onClick={() => scrollToSection("about")}
             src="/logo.png"
             className="h-11 max-sm:h-8 cursor-pointer"
             alt=""

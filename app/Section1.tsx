@@ -1,5 +1,10 @@
+"use client"
 import background from "@/public/background.png";
+import { useInView } from "framer-motion";
+import { useRef } from "react";
 const Section1 = () => {
+  const sec1Ref = useRef(null);
+  const isInView = useInView(sec1Ref, { amount: 0.3, once: true });
   return (
     <div id="about" className="relative h-screen flex flex-col">
       <div className="">
@@ -16,7 +21,8 @@ const Section1 = () => {
         />
       </div>
       <div className="relative z-[4] max-w-desktop w-full mx-auto px-2 flex justify-between flex-1 items-center">
-        <div className="flex flex-col max-w-[740px] gap-8 w-full">
+        <div ref={sec1Ref} className={`flex flex-col max-w-[740px] gap-8 w-full ${isInView ? "animate-fade-up opacity-100" : "opacity-0"}`}
+        >
           <p className="uppercase text-[72px] leading-[72px] font-omega max-md:text-[40px] max-md:leading-[40px]">
             moodiez studios.
           </p>
