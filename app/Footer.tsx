@@ -2,8 +2,8 @@ import { FaDiscord, FaTelegram, FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <div className="bg-primary mt-10">
-      <div className="max-w-desktop px-2 flex justify-between">
+    <div id="contact" className="bg-primary mt-10">
+      <div className="max-w-desktop w-full mx-auto px-2 flex justify-between">
         <img src="logo-footer.png" className="max-md:w-[30%]" />
         <div className="flex flex-col items-center justify-end max-md:justify-center gap-4 max-md:gap-2 md:mb-8">
           <p className="text-2xl max-md:text-base">Join the community</p>

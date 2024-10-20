@@ -1,7 +1,7 @@
 import background from "@/public/background.png";
 const Section1 = () => {
   return (
-    <div className="relative h-screen flex flex-col">
+    <div id="about" className="relative h-screen flex flex-col">
       <div className="">
         <img
           src={background.src}
