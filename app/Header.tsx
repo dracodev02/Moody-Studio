@@ -6,9 +6,15 @@ const Header = () => {
           <img src="/logo.png" className="h-11 max-sm:h-8" alt="" />
         </div>
         <div className="flex gap-8 max-sm:gap-4 items-center font-outfit font-semibold text-base leading-6 text-white">
-          <p>About us</p>
-          <p>Projects</p>
-          <p>Contact</p>
+          <p className="cursor-pointer transition-all hover:scale-110 hover:font-bold">
+            About us
+          </p>
+          <p className="cursor-pointer transition-all hover:scale-110 hover:font-bold">
+            Projects
+          </p>
+          <p className="cursor-pointer transition-all hover:scale-110 hover:font-bold">
+            Contact
+          </p>
         </div>
       </div>
     </div>

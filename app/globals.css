@@ -18,18 +18,35 @@ body {
     text-wrap: balance;
   }
 }
-  
-  svg {
-    display: block;
-  }
-  
-  text {
-    fill: transparent;
-    stroke: white;
-    stroke-width: 1;
-  }
 
-  .text-border {
-    color: transparent;
-    -webkit-text-stroke: 1px #fff;
+svg {
+  display: block;
+}
+
+text {
+  fill: transparent;
+  stroke: white;
+  stroke-width: 1;
+}
+
+.text-border {
+  color: transparent;
+  -webkit-text-stroke: 1px #fff;
+}
+
+.slider-container:hover .slider {
+  animation-play-state: paused;
+}
+
+.slider {
+  animation: slide 10s linear infinite;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
   }
+  100% {
+    transform: translateX(-100%);
+  }
+}
