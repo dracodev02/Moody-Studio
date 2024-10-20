@@ -1,21 +1,17 @@
 "use client";
 
-import { useState } from "react";
-
 interface HeaderItem {
   name: string;
   section: string;
 }
 
 const Header = () => {
-  const [activeSection, setActiveSection] = useState(0);
   const menu: HeaderItem[] = [
     { name: "About us", section: "about" },
     { name: "Projects", section: "projects" },
     { name: "Contact", section: "contact" },
   ];
-  const scrollToSection = (index: number, section: string) => {
-    setActiveSection(index);
+  const scrollToSection = (section: string) => {
     const element = document.getElementById(section);
     if (element) {
       const elementPosition =
@@ -43,15 +39,11 @@ const Header = () => {
           {menu.map((item, index) => {
             return (
               <div
-                onClick={() => scrollToSection(index, item.section)}
+                onClick={() => scrollToSection(item.section)}
                 key={index}
                 className="max-lg:hidden"
               >
-                <p
-                  className={`cursor-pointer transition-all hover:scale-[1.05] ${
-                    activeSection === index ? "border-b" : ""
-                  }`}
-                >
+                <p className="cursor-pointer transition-all hover:scale-[1.05]">
                   {item.name}
                 </p>
               </div>
