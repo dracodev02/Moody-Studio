@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import background from "@/public/background.png";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
@@ -21,7 +21,11 @@ const Section1 = () => {
         />
       </div>
       <div className="relative z-[4] max-w-desktop w-full mx-auto px-2 flex justify-between flex-1 items-center">
-        <div ref={sec1Ref} className={`flex flex-col max-w-[740px] gap-8 w-full ${isInView ? "animate-fade-up opacity-100" : "opacity-0"}`}
+        <div
+          ref={sec1Ref}
+          className={`flex flex-col max-w-[740px] gap-8 w-full ${
+            isInView ? "animate-fade-up opacity-100" : "opacity-0"
+          }`}
         >
           <p className="uppercase text-[72px] leading-[72px] font-omega max-md:text-[40px] max-md:leading-[40px]">
             moodiez studios.
@@ -35,33 +39,61 @@ const Section1 = () => {
       </div>
       <div className="w-full bg-primary py-2 overflow-hidden whitespace-nowrap slider-container">
         <div className="slider">
-          <p className="inline-block px-9 uppercase font-bold font-outfit text-balance leading-5 py-2">
-            <span className="px-3">the kaiju of gaming sector</span>
-            <span className="px-3">starknet is our destination</span>
-          </p>{" "}
-          <p className="inline-block px-9 uppercase font-bold font-outfit text-balance leading-5 py-2">
-            <span className="px-3">the kaiju of gaming sector</span>
-            <span className="px-3">starknet is our destination</span>
-          </p>{" "}
-          <p className="inline-block px-9 uppercase font-bold font-outfit text-balance leading-5 py-2">
-            <span className="px-3">the kaiju of gaming sector</span>
-            <span className="px-3">starknet is our destination</span>
-          </p>{" "}
-          <p className="inline-block px-9 uppercase font-bold font-outfit text-balance leading-5 py-2">
-            <span className="px-3">the kaiju of gaming sector</span>
-            <span className="px-3">starknet is our destination</span>
-          </p>{" "}
-          <p className="inline-block px-9 uppercase font-bold font-outfit text-balance leading-5 py-2">
-            <span className="px-3">the kaiju of gaming sector</span>
-            <span className="px-3">starknet is our destination</span>
-          </p>{" "}
-          <p className="inline-block px-9 uppercase font-bold font-outfit text-balance leading-5 py-2">
-            <span className="px-3">the kaiju of gaming sector</span>
-            <span className="px-3">starknet is our destination</span>
+          <p className="inline-block px-9 uppercase whitespace-nowrap font-bold font-outfit text-balance leading-5 py-2">
+            <span className="px-3 whitespace-nowrap">
+              the kaiju of gaming sector
+            </span>
+            <span className="px-3 whitespace-nowrap">
+              starknet is our destination
+            </span>
           </p>
-          <p className="inline-block px-9 uppercase font-bold font-outfit text-balance leading-5 py-2">
-            <span className="px-3">the kaiju of gaming sector</span>
-            <span className="px-3">starknet is our destination</span>
+          <p className="inline-block px-9 uppercase whitespace-nowrap font-bold font-outfit text-balance leading-5 py-2">
+            <span className="px-3 whitespace-nowrap">
+              the kaiju of gaming sector
+            </span>
+            <span className="px-3 whitespace-nowrap">
+              starknet is our destination
+            </span>
+          </p>
+          <p className="inline-block px-9 uppercase whitespace-nowrap font-bold font-outfit text-balance leading-5 py-2">
+            <span className="px-3 whitespace-nowrap">
+              the kaiju of gaming sector
+            </span>
+            <span className="px-3 whitespace-nowrap">
+              starknet is our destination
+            </span>
+          </p>
+          <p className="inline-block px-9 uppercase whitespace-nowrap font-bold font-outfit text-balance leading-5 py-2">
+            <span className="px-3 whitespace-nowrap">
+              the kaiju of gaming sector
+            </span>
+            <span className="px-3 whitespace-nowrap">
+              starknet is our destination
+            </span>
+          </p>
+          <p className="inline-block px-9 uppercase whitespace-nowrap font-bold font-outfit text-balance leading-5 py-2">
+            <span className="px-3 whitespace-nowrap">
+              the kaiju of gaming sector
+            </span>
+            <span className="px-3 whitespace-nowrap">
+              starknet is our destination
+            </span>
+          </p>
+          <p className="inline-block px-9 uppercase whitespace-nowrap font-bold font-outfit text-balance leading-5 py-2">
+            <span className="px-3 whitespace-nowrap">
+              the kaiju of gaming sector
+            </span>
+            <span className="px-3 whitespace-nowrap">
+              starknet is our destination
+            </span>
+          </p>
+          <p className="inline-block px-9 uppercase whitespace-nowrap font-bold font-outfit text-balance leading-5 py-2">
+            <span className="px-3 whitespace-nowrap">
+              the kaiju of gaming sector
+            </span>
+            <span className="px-3 whitespace-nowrap">
+              starknet is our destination
+            </span>
           </p>
         </div>
       </div>
